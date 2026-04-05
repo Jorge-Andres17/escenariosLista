@@ -2,14 +2,14 @@ package escenariosLista.escenario3;
 
 import java.util.Iterator;
 
-public class CirculeSinglyList<T> implements Iterable<T> {
+public class CirculeSinglyList_1<T> implements Iterable<T> {
 
-    private Node<T> firstNode;
-    private Node<T> lastNode;
-    private Node<T> current;
+    private Node_1<T> firstNode;
+    private Node_1<T> lastNode;
+    private Node_1<T> current;
     private int size;
 
-    public CirculeSinglyList(){
+    public CirculeSinglyList_1(){
         firstNode = null;
         lastNode = null;
         current = null;
@@ -22,7 +22,7 @@ public class CirculeSinglyList<T> implements Iterable<T> {
 
     // Agregar al inicio
     public void addHome(T value){
-        Node<T> newNode = new Node<>(value);
+        Node_1<T> newNode = new Node_1<>(value);
 
         if(IsEmpty()){
             firstNode = newNode;
@@ -54,8 +54,8 @@ public class CirculeSinglyList<T> implements Iterable<T> {
     public void remove(T value){
         if(IsEmpty()) return;
 
-        Node<T> currentNode = firstNode;
-        Node<T> previous = lastNode;
+        Node_1<T> currentNode = firstNode;
+        Node_1<T> previous = lastNode;
 
         do {
             if(currentNode.getNodeValue().equals(value)){
@@ -97,7 +97,7 @@ public class CirculeSinglyList<T> implements Iterable<T> {
             return;
         }
 
-        Node<T> temp = firstNode;
+        Node_1<T> temp = firstNode;
 
         do {
             System.out.println(temp.getNodeValue());
@@ -108,7 +108,7 @@ public class CirculeSinglyList<T> implements Iterable<T> {
     @Override
     public Iterator<T> iterator() {
         return new Iterator<T>() {
-            private Node<T> currentNode = firstNode;
+            private Node_1<T> currentNode = firstNode;
             private int count = 0;
 
             @Override

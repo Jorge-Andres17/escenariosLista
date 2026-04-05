@@ -1,24 +1,24 @@
 package escenariosLista.escenario3;
 
-public class Node<T> {
+public class Node_1<T> {
 
-    private Node<T> nextNode;
+    private Node_1<T> nextNode;
     private T nodeValue;
 
-    public Node(T nodeValue){
+    public Node_1(T nodeValue){
         this.nodeValue = nodeValue;
     }
 
-    public Node(T nodeValue, Node<T> nextNode){
+    public Node_1(T nodeValue, Node_1<T> nextNode){
         this.nodeValue = nodeValue;
         this.nextNode = nextNode;
     }
 
-    public Node<T> getNextNode(){
+    public Node_1<T> getNextNode(){
         return nextNode;
     }
 
-    public void setNexNode(Node<T> nextNode){
+    public void setNexNode(Node_1<T> nextNode){
         this.nextNode = nextNode;
     }
 
